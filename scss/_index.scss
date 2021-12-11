@@ -1,0 +1,201 @@
+.main1 {
+  margin: 15px auto;
+  color: rgba(255, 255, 255, 0.808);
+  width: 100%;
+  max-width: 2000px;
+  padding: 20px;
+  
+
+  .contenedor-compra1 {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border:2px solid rgb(233, 232, 232);
+
+    .imagen-compra-1 {
+      margin: 5px auto;
+      padding: 5px;
+      width: 80%;
+
+      .bici {
+        width: 100%;
+        border-radius: 10px;
+        height: auto;
+        
+      }
+    }
+
+    .contenedor-compratitulo {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 15px;
+      
+
+      p {
+        font-size: 25px;
+        line-height: 40px;
+        text-align: center;
+        margin-top: 100px;
+      }
+    }
+    .boton-compra {
+      margin-top: 20px;
+      right: 0;
+      text-align: center;
+      width: 100%;
+      input {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+      input:hover {
+        background-color: lightblue;
+      }
+    }
+  }
+}
+
+.informacion {
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  background-color: #ffce2b;
+
+}
+
+.informacion-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #ffce2b;
+  margin: auto;
+  width: 100%;
+  max-width: 1400px;
+  padding: 15px;
+
+  .nosotros {
+    width: 50%;
+    margin: 15px auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      text-align: center;
+      font-weight: bold;
+      font-size: 25px;
+    }
+    h4 {
+      text-align: center;
+      font-size: 15px;
+    }
+  }
+}
+
+
+@media screen and (max-width:768px) {
+  .main1 {
+    margin: 15px auto;
+    color: rgba(255, 255, 255, 0.808);
+    width: 100%;
+    max-width: 2000px;
+    padding: 20px;
+  
+    .contenedor-compra1 {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      border:2px solid rgb(233, 232, 232);
+  
+      .imagen-compra-1 {
+        margin: 5px auto;
+        padding: 5px;
+        width: 100%;
+  
+        .bici {
+          width: 100%;
+          border-radius: 10px;
+          height: auto;
+          
+        }
+      }
+  
+      .contenedor-compratitulo {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+        
+  
+        p {
+          font-size: 20px;
+          line-height: 40px;
+          text-align: center;
+          margin-top: 100px;
+        }
+      }
+      .boton-compra {
+        margin-top: 20px;
+        right: 0;
+        text-align: center;
+        width: 100%;
+        input {
+          width: 100px;
+          height: 40px;
+          font-size: 15px;
+          text-transform: uppercase;
+          text-align: center;
+        }
+        input:hover {
+          background-color: lightblue;
+        }
+      }
+    }
+  }
+  
+  .informacion {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  .informacion-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #ffce2b;
+    margin: auto;
+    width: 100%;
+    max-width: 1400px;
+    padding: 15px;
+  
+    .nosotros {
+      width: 50%;
+      margin: 15px auto;
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h3 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 25px;
+      }
+      h4 {
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+  }
+}

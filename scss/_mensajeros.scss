@@ -1,0 +1,62 @@
+@import "mixins";
+
+.contenedor-mensajeros {
+  @include contenedor;
+
+  .mensajeros {
+    width: 50%;
+    max-width: 1400px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    text-decoration: goldenrod, solid;
+
+    .tarjeta-mensajeros {
+      width:50%;
+      height: 50%;
+      background-color: rgb(179, 177, 177);
+      border: 2px solid rgb(20, 20, 20);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 20px auto;
+      text-align: center;
+      
+    }
+      .tarjeta-mensajeros:hover {
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+        transform: translate(-10px);
+        box-shadow: rgba(246, 187, 38, 0.972);
+    }
+
+      .imagen-tarjeta-mensajeros {
+          width: 100%;
+        img {
+          width: 50%;
+          margin: auto;
+          border-radius: 20px;
+          margin-top: 20px;
+        }
+       
+      
+      .body-tarjeta {
+        color: rgb(15, 15, 15);
+        font-family: Lato;
+        text-decoration: solid;
+        margin-top: 10px;
+
+        input {
+          width: 100px;
+          height: 20px;
+          margin-top: 2px;
+          font-size: 10px;
+          text-transform: uppercase;
+          text-align: center;
+          font-family: sans-serif;
+        }
+       }
+     }
+  }
+}

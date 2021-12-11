@@ -1,0 +1,25 @@
+@import 'variables';
+@import 'mixins';
+@import 'header';
+@import 'index';
+@import 'mensajeros';
+@import 'clientes';
+@import 'contacto';
+@import 'pedidos';
+@import 'footer';
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+   /*  background-image: url("imagenes/fondoblack.jpg"); */
+   background-image: url("../imagenes/fondoblack.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Lato, sans-serif;
+
+}

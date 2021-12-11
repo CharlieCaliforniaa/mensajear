@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/favicon-32x32.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap"rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <title>Contacto</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+    <img src="imagenes/logo-amarillo.png" alt="logo" />
+      
+    </div>
+    <h1 id="inicio">Logística Argentina</h1>
+    <!------------------Navbar ----------------------->
+      <nav
+        class="
+          navbar
+          d-flex
+          navbar-expand-lg navbar-light
+          bg-warning
+          sticky-stop
+          container-fluid
+          menu-nav
+          m-auto
+        "
+      >
+        <div class="container-fluid">
+          <div>
+            <img src="imagenes/logoipsum-logo-38.svg" alt="" />
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mx-auto text-uppercase fw-bold mb-2 mb-lg-0"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  aria-current="page"
+                  href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  aria-current="page"
+                  href="pedido.html"
+                  >Pedido</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="mensajerxs.html"
+                  >Mensajeros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="clientes.html"
+                  >Clientes</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </header> 
+    <!-- -------------------FORMULARIO------------------------- -->
+    <form class="formContacto" action="">
+        <fieldset class="form-container">
+            <legend><h1>Contacto</h1></legend>
+            
+            <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" placeholder="Introduce tu nombre">
+            </div>
+            <br>
+
+            <div>
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" placeholder="Introduce tu apellido">
+            </div>
+
+            <br>
+        
+            <div>
+                <label for="mail">Mail</label>
+                <input type="text" name="mail" placeholder="Introduce tu mail">
+            </div>
+
+            <br>
+            
+            <div>
+                <span>Número de teléfono</span>
+                <input type="text" name="teléfono" placeholder="Introduce tu teléfono">
+            </div>
+            <br>
+
+            <div>
+                <span>Nombre de la empresa</span>
+                <input type="text" name="" placeholder="">
+            </div>
+            <br>
+            <div>
+                <span>Sitio Web</span>
+                <input type="text" name="sitio-web" id="">
+            </div>
+            
+           <br>
+
+           <br>
+           <p>
+           Contanos sobre tus necesidades
+           </p>
+           <textarea name="Detalles de tu pedido" cols="40" rows="10"></textarea>
+           <br>
+           <br>
+           <div class="form-check mt-5 p-2">Acepta los términos</div>
+               <input type="checkbox" name="aceptar" value="1">
+           <form action="">
+               <br>
+               <button type="button" class="btn btn-light" value="Enviar">Enviar</button>
+               <button type="button" class="btn btn-light" value="Borrar">Borrar</button>
+            </form>
+
+        </fieldset>
+    </form>
+    <!-----------------------FOOTER---------------------------->
+    <footer>
+      <div class="contenedor-footer">
+        <div class="contenedor-footer1">
+          <div class="item-footer">
+            <div class="sub-item"></div>
+            <div class="sub-item-1">
+              <p>+54 9 119999999</p>
+            </div>
+          </div>
+          <div class="item-footer">
+            <div class="sub-item"></div>
+            <div class="sub-item-1">
+              <p>info@email.com</p>
+            </div>
+          </div>
+          <div class="item-footer">
+            <div class="sub-item"></div>
+            <div class="sub-item-1">
+              <p>Av. Bulnes 5534. Bs As. Argentina</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor-footer2">
+          <div class="item-footer2">
+            <h6>About</h6>
+            <div class="sub-item2">
+              <a href="pedido.html">Pedidos</a>
+              <a href="mensajerxs.html">Mensajeros</a>
+              <a href="clientes.html">Clientes</a>
+              <a href="contacto.html">Contacto</a>
+            </div>
+       
+          </div>
+          
+          <div class="item-footer-input">
+            <h5>Suscribite</h5>
+            <h6>Recibe nuestras novedades</h6>
+            <div class="input-footer">
+              <input type="text" placeholder="email@email.com">
+              <button type="submit">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+    
+    
+</body>
+</html>
