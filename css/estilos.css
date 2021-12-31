@@ -37,7 +37,6 @@ header #inicio {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  border: 2px solid #e9e8e8;
 }
 .main1 .contenedor-compra1 .imagen-compra-1 {
   margin: 5px auto;
@@ -186,8 +185,7 @@ header #inicio {
   text-align: center;
   margin: auto;
 }
-
-.informacion-servicio {
+.servicio-container .informacion-servicio {
   margin-top: 30px;
   font-size: 15px;
 }
@@ -239,12 +237,12 @@ header #inicio {
 .contenedor-mensajeros .mensajeros .tarjeta-mensajeros {
   width: 40%;
   height: 50%;
-  background-color: #b3b1b1;
   border: 2px solid #141414;
   border-radius: 10px;
   overflow: hidden;
   margin: 20px auto;
   text-align: center;
+  color: white;
 }
 .contenedor-mensajeros .mensajeros .tarjeta-mensajeros .imagen-tarjeta-mensajeros {
   width: 100%;
@@ -273,10 +271,12 @@ header #inicio {
   background: rgba(246, 187, 38, 0.972);
   width: 30%;
   border: hidden;
-  color: white;
+  color: #0a0a0a;
+  font-weight: bold;
 }
 .contenedor-mensajeros .mensajeros .tarjeta-mensajeros .body-tarjeta .btn-tarjeta .btn-msj:hover {
-  background: #3c3cd3;
+  background: #3232e9;
+  color: white;
 }
 .contenedor-mensajeros .mensajeros .tarjeta-mensajeros:hover {
   transition: 1.5s ease-in-out;
@@ -332,6 +332,36 @@ header #inicio {
   height: 700px;
 }
 
+@media screen and (max-width: 768px) {
+  .main-clientes {
+    margin: auto;
+    width: 100%;
+    display: block;
+    block-size: auto;
+    align-items: center;
+    padding: 25px;
+  }
+  .main-clientes .image-div {
+    margin: auto;
+    width: 350px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main-clientes {
+    margin: 50px auto;
+    width: 100%;
+    display: block;
+    block-size: auto;
+    align-items: center;
+    padding: 25px;
+  }
+  .main-clientes .image-div {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+  }
+}
 .main-contacto {
   width: 100%;
   margin: auto;

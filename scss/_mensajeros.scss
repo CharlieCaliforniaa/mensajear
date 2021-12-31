@@ -17,12 +17,12 @@
     .tarjeta-mensajeros {
       width: 40%;
       height: 50%;
-      background-color: rgb(179, 177, 177);
       border: 2px solid rgb(20, 20, 20);
       border-radius: 10px;
       overflow: hidden;
       margin: 20px auto;
       text-align: center;
+      color: white;
 
       .imagen-tarjeta-mensajeros {
         width: 100%;
@@ -52,11 +52,13 @@
               background: rgba(246, 187, 38, 0.972);
               width: 30%;
               border: hidden;
-              color: white;
+              color: rgb(10, 10, 10);
+              font-weight: bold;
             }
           }
           .btn-msj:hover {
-            background: rgb(60, 60, 211);
+            background: #3232e9;
+            color: white;
           }
         }
         

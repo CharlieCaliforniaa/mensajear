@@ -12,7 +12,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    border: 2px solid rgb(233, 232, 232);
 
     .imagen-compra-1 {
       margin: 5px auto;
@@ -40,6 +39,7 @@
         margin-top: 100px;
       }
     }
+
     .boton-compra {
       margin-top: 20px;
       right: 0;
@@ -59,6 +59,7 @@
         transition: all 0.5s;
 
       }
+
       :hover {
         background-color: rgba(246, 187, 38, 0.972);
       }
@@ -90,11 +91,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     h3 {
       text-align: center;
       font-weight: bold;
       font-size: 25px;
     }
+
     h4 {
       text-align: center;
       font-size: 15px;
@@ -145,11 +148,13 @@
           margin-top: 100px;
         }
       }
+
       .boton-compra {
         margin-top: 20px;
         right: 0;
         text-align: center;
         width: 100%;
+
         input {
           width: 100px;
           height: 40px;
@@ -157,6 +162,7 @@
           text-transform: uppercase;
           text-align: center;
         }
+
         input:hover {
           background-color: lightblue;
         }
@@ -174,11 +180,13 @@
   flex-direction: column;
   text-align: center;
   margin: auto;
+
+  .informacion-servicio {
+    margin-top: 30px;
+    font-size: 15px;
+  }
 }
-.informacion-servicio{
-  margin-top: 30px;
-  font-size: 15px;
-}
+
 
 
 
@@ -199,11 +207,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     h3 {
       text-align: center;
       font-weight: bold;
       font-size: 25px;
     }
+
     h4 {
       text-align: center;
       font-size: 15px;

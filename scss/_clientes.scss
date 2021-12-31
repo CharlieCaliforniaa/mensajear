@@ -27,3 +27,39 @@
     height: 700px;
   }
 }
+
+@media screen and(max-width:768px) {
+  .main-clientes {
+    margin: auto;
+    width: 100%;
+    display: block;
+    block-size: auto;
+    align-items: center;
+    padding: 25px;
+   
+  
+    .image-div {
+      margin: auto;
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+
+@media screen and(max-width:400px) {
+  .main-clientes {
+    margin:50px auto;
+    width: 100%;
+    display: block;
+    block-size: auto;
+    align-items: center;
+    padding: 25px;
+   
+  
+    .image-div {
+      margin: auto;
+      width: 200px;
+      height: 200px;
+    }
+  }
+}
