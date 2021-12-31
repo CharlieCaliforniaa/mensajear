@@ -1,14 +1,136 @@
-.formPedido { 
+.main-pedido {
     width: 100%;
-    padding: 20px;
-    margin: 10px;
-    color: #ffce2b;
-    font-weight: bold;
-    font-size: 20px;
-    border: solid;
-    border: 10px;
-    box-shadow: lightblue;
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
+    max-width: 2300px;
+    margin:100px auto;
+    h1{
+        text-align: center;
+        color: white;
+    }
+
+    .contenedor-pedido {
+        width: 100%;
+        padding: 20px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: white;
+        
+        .formPedido {
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+           
+            .data {
+                width: 80%;
+                max-width: 700px;
+                margin: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                label,
+                span {
+                    font-size: 25px;
+                    font-weight: 500;
+                    margin-top: 15px;
+                }
+
+                input,
+                select {
+                    border-radius: 5px;
+                    height: 50px;
+                }
+            }
+
+            .data-terminos {
+                width: 50%;
+                max-width: 500px;
+                margin: 15px auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+                h6 {
+                    margin: 15px;
+                    color: white;
+                    font-size: 20px;
+                }
+
+                input {
+                    margin: 20px 5px;
+                    font-size: 30px;
+                    cursor: pointer;
+                }
+
+
+            }
+
+            .data-btn {
+                width: 50%;
+                max-width: 500px;
+                margin: auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+
+
+                button {
+                    width: 100px;
+                    height: 50px;
+                    padding: 5px;
+                    margin: 15px;
+                    background-color: rgba(246, 187, 38, 0.972);
+                    color: black;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    background-color: rgb(72, 72, 206);
+                    cursor: pointer;
+
+                }
+
+            }
+
+        }
+
+        .iframe {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            margin: auto;
+            align-items: flex-start;
+
+            .iframe {
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main-pedido {
+
+        .contenedor-pedido {
+            display: flex;
+            flex-direction: column;
+
+            .formPedido {
+                width: 100%;
+                .data {
+                    width: 80%;
+                    max-width: 1100px;
+                }
+            }
+
+            .iframe{
+                margin-top: 50px;
+                width: 80%;
+            }
+        }
+    }
 }

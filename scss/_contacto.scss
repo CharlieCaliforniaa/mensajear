@@ -1,20 +1,124 @@
-.formContacto{
-    color: rgb(15, 15, 15);;
-    background-color: rgb(179, 177, 177);
-    border: 2px solid rgb(20, 20, 20);
-    text-align: center;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-
-    .form-container{
-        text-align: center;
-        margin-top: 30px;
-        border:greenyellow
-    }
-
-}
-.contenedor-formulario{
+.main-contacto {
     width: 100%;
-    margin: 50px;
-    padding: 100px;
+    margin: auto;
+    max-width: 2300px;
+
+    .contenedor-formulario {
+        width: 100%;
+        margin: 0 auto;
+        padding: 25px;
+        border-radius: 20px;
+        
+
+        .formContacto {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: rgb(241, 238, 238);
+            border: 2px solid rgb(20, 20, 20);
+            text-align: left;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+                Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-weight: bold;
+
+            .data {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                max-width: 500px;
+                margin:15px auto;
+                justify-content: flex-start;
+                label, span{
+                    font-size: 25px;
+                    font-weight: 500;
+                    color: white;
+
+                    
+                }
+                input{
+                    height: 50px;
+                    border-radius: 5px;
+                    border: 2px solid rgb(128, 125, 125)
+                    
+                }
+            } 
+
+            .text-area {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                max-width: 500px;
+                margin: auto;
+            }
+            .contenedor-terminos{
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+                max-width: 500px;
+                margin: 5px auto; 
+
+                
+                .terminos{
+                    display: flex;
+                    flex-direction: row;
+                    margin: auto;
+
+                    h6{
+                        margin: 15px;
+                        color: white;
+                        font-size: 20px;
+                    }
+
+                    input{
+                        margin: 20px 5px;
+                        font-size: 30px;
+                        cursor: pointer;
+
+                    }
+                }
+
+                .btn{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    margin: 5px auto;
+                    width: 80%;
+                max-width: 500px;
+                    button{
+                        width: 150px;
+                        height: 50px;
+                        margin: 15px;
+                        text-align: center;
+                        padding: 5px;
+                        font-size: 20px;
+                        font-weight: bold;
+                        background-color: rgb(63, 63, 216);
+                        color: white;
+                        cursor: pointer;
+
+                    }
+                    .animate__animated.animate__bounce {
+                        --animate-duration: 2s;
+                      }
+                      
+                      /* This changes all the animations globally */
+                      :root {
+                        --animate-duration: 800ms;
+                        --animate-delay: 0.9s;
+                      }
+
+                    button:hover{
+                        background-color: rgb(96, 96, 202);
+                        cursor: pointer;
+
+                    }
+                } 
+
+            }
+
+
+        }
+    }
 }

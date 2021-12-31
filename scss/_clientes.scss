@@ -1,14 +1,29 @@
-.main-clientes {
-  .carrusel {
-    margin: auto;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+// .main-clientes {
+//   .carrusel {
+//     margin: auto;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
 
-    .items-carrusel{
-       margin: auto;
-        width: 50%;
-        background: red;
-    }
+//     .items-carrusel{
+//        margin: auto;
+//        width: 50%;
+//        background: red;
+
+//     }
+//   }
+// }
+.main-clientes {
+  margin: auto;
+  width: 100%;
+  display: block;
+  block-size: auto;
+  align-items: center;
+ 
+
+  .image-div {
+    margin: auto;
+    width: 700px;
+    height: 700px;
   }
 }

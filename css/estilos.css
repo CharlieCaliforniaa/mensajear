@@ -1,6 +1,6 @@
 header {
   width: 100%;
-  max-width: 2000px;
+  max-width: 2400px;
   margin: auto;
   font-weight: bold;
   font-size: 20px;
@@ -21,11 +21,6 @@ header #inicio {
   text-align: center;
   font-size: 30px;
   margin: 20px;
-}
-header .menu-nav {
-  width: 100%;
-  margin: auto;
-  max-width: 2000px;
 }
 
 .main1 {
@@ -61,7 +56,7 @@ header .menu-nav {
   justify-content: center;
   padding: 15px;
 }
-.main1 .contenedor-compra1 .contenedor-compratitulo p {
+.main1 .contenedor-compra1 .contenedor-compratitulo .parrafo {
   font-size: 25px;
   line-height: 40px;
   text-align: center;
@@ -73,15 +68,20 @@ header .menu-nav {
   text-align: center;
   width: 100%;
 }
-.main1 .contenedor-compra1 .boton-compra input {
+.main1 .contenedor-compra1 .boton-compra .btn-compra {
   width: 100px;
   height: 40px;
   font-size: 15px;
   text-transform: uppercase;
   text-align: center;
+  margin: 15px;
+  border: hidden;
+  color: black;
+  border-radius: 10px;
+  transition: all 0.5s;
 }
-.main1 .contenedor-compra1 .boton-compra input:hover {
-  background-color: lightblue;
+.main1 .contenedor-compra1 .boton-compra :hover {
+  background-color: rgba(246, 187, 38, 0.972);
 }
 
 .informacion {
@@ -175,59 +175,69 @@ header .menu-nav {
   .main1 .contenedor-compra1 .boton-compra input:hover {
     background-color: lightblue;
   }
-
-  .informacion {
-    width: 100%;
-    max-width: 1400px;
-    margin: auto;
-  }
-
-  .informacion-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #ffce2b;
-    margin: auto;
-    width: 100%;
-    max-width: 1400px;
-    padding: 15px;
-  }
-  .informacion-container .nosotros {
-    width: 50%;
-    margin: 15px auto;
-    padding: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .informacion-container .nosotros h3 {
-    text-align: center;
-    font-weight: bold;
-    font-size: 25px;
-  }
-  .informacion-container .nosotros h4 {
-    text-align: center;
-    font-size: 15px;
-  }
 }
+.servicio-container {
+  background-color: #ffce2b;
+  width: 100%;
+  max-width: 1400px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
+.informacion-servicio {
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+.informacion-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #ffce2b;
+  margin: auto;
+  width: 100%;
+  max-width: 1400px;
+  padding: 15px;
+}
+.informacion-container .nosotros {
+  width: 50%;
+  margin: 15px auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.informacion-container .nosotros h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+.informacion-container .nosotros h4 {
+  text-align: center;
+  font-size: 15px;
+}
+
 .contenedor-mensajeros {
   max-width: 100%;
   height: 100%;
   margin: 30px auto;
 }
 .contenedor-mensajeros .mensajeros {
-  width: 50%;
-  max-width: 1400px;
+  width: 100%;
+  max-width: 1600px;
   height: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin: auto;
+  justify-content: center;
+  margin: 5px auto;
   text-decoration: goldenrod, solid;
 }
 .contenedor-mensajeros .mensajeros .tarjeta-mensajeros {
-  width: 50%;
+  width: 40%;
   height: 50%;
   background-color: #b3b1b1;
   border: 2px solid #141414;
@@ -236,85 +246,309 @@ header .menu-nav {
   margin: 20px auto;
   text-align: center;
 }
-.contenedor-mensajeros .mensajeros .tarjeta-mensajeros:hover {
-  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
-  transform: translate(-10px);
-  box-shadow: rgba(246, 187, 38, 0.972);
-}
-.contenedor-mensajeros .mensajeros .imagen-tarjeta-mensajeros {
+.contenedor-mensajeros .mensajeros .tarjeta-mensajeros .imagen-tarjeta-mensajeros {
   width: 100%;
 }
-.contenedor-mensajeros .mensajeros .imagen-tarjeta-mensajeros img {
+.contenedor-mensajeros .mensajeros .tarjeta-mensajeros .imagen-tarjeta-mensajeros img {
   width: 50%;
   margin: auto;
   border-radius: 20px;
   margin-top: 20px;
 }
-.contenedor-mensajeros .mensajeros .imagen-tarjeta-mensajeros .body-tarjeta {
-  color: #0f0f0f;
+.contenedor-mensajeros .mensajeros .tarjeta-mensajeros .body-tarjeta {
   font-family: Lato;
   text-decoration: solid;
   margin-top: 10px;
 }
-.contenedor-mensajeros .mensajeros .imagen-tarjeta-mensajeros .body-tarjeta input {
-  width: 100px;
-  height: 20px;
-  margin-top: 2px;
-  font-size: 10px;
-  text-transform: uppercase;
-  text-align: center;
-  font-family: sans-serif;
-}
-
-.main-clientes .carrusel {
-  margin: auto;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-.main-clientes .carrusel .items-carrusel {
-  margin: auto;
-  width: 50%;
-  background: red;
-}
-
-.formContacto {
-  color: #0f0f0f;
-  background-color: #b3b1b1;
-  border: 2px solid #141414;
-  text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
-}
-.formContacto .form-container {
-  text-align: center;
-  margin-top: 30px;
-  border: greenyellow;
-}
-
-.contenedor-formulario {
-  width: 100%;
-  margin: 50px;
-  padding: 100px;
-}
-
-.formPedido {
+.contenedor-mensajeros .mensajeros .tarjeta-mensajeros .body-tarjeta .btn-tarjeta {
   width: 100%;
   padding: 20px;
-  margin: 10px;
-  color: #ffce2b;
-  font-weight: bold;
+}
+.contenedor-mensajeros .mensajeros .tarjeta-mensajeros .body-tarjeta .btn-tarjeta .form .btn-msj {
+  height: 50px;
+  margin-top: 2px;
   font-size: 20px;
-  border: solid;
-  border: 10px;
-  box-shadow: lightblue;
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgba(246, 187, 38, 0.972);
+  width: 30%;
+  border: hidden;
+  color: white;
+}
+.contenedor-mensajeros .mensajeros .tarjeta-mensajeros .body-tarjeta .btn-tarjeta .btn-msj:hover {
+  background: #3c3cd3;
+}
+.contenedor-mensajeros .mensajeros .tarjeta-mensajeros:hover {
+  transition: 1.5s ease-in-out;
+  transform: scale(1.1);
+  box-shadow: rgba(246, 187, 38, 0.972);
+  cursor: pointer;
 }
 
+@media screen and (max-width: 768px) {
+  .contenedor-mensajeros {
+    max-width: 100%;
+    height: 100%;
+    margin: 30px auto;
+  }
+  .contenedor-mensajeros .mensajeros {
+    width: 100%;
+    max-width: 1600px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px auto;
+    text-decoration: goldenrod, solid;
+  }
+  .contenedor-mensajeros .mensajeros .tarjeta-mensajeros {
+    width: 80%;
+    height: 50%;
+    background-color: #b3b1b1;
+    border: 2px solid #141414;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px auto;
+    text-align: center;
+  }
+  .contenedor-mensajeros .mensajeros .tarjeta-mensajeros:hover {
+    transition: none;
+    transform: none;
+    box-shadow: none;
+    cursor: progress;
+  }
+}
+.main-clientes {
+  margin: auto;
+  width: 100%;
+  display: block;
+  block-size: auto;
+  align-items: center;
+}
+.main-clientes .image-div {
+  margin: auto;
+  width: 700px;
+  height: 700px;
+}
+
+.main-contacto {
+  width: 100%;
+  margin: auto;
+  max-width: 2300px;
+}
+.main-contacto .contenedor-formulario {
+  width: 100%;
+  margin: 0 auto;
+  padding: 25px;
+  border-radius: 20px;
+}
+.main-contacto .contenedor-formulario .formContacto {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f1eeee;
+  border: 2px solid #141414;
+  text-align: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+}
+.main-contacto .contenedor-formulario .formContacto .data {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 500px;
+  margin: 15px auto;
+  justify-content: flex-start;
+}
+.main-contacto .contenedor-formulario .formContacto .data label, .main-contacto .contenedor-formulario .formContacto .data span {
+  font-size: 25px;
+  font-weight: 500;
+  color: white;
+}
+.main-contacto .contenedor-formulario .formContacto .data input {
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid #807d7d;
+}
+.main-contacto .contenedor-formulario .formContacto .text-area {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 500px;
+  margin: auto;
+}
+.main-contacto .contenedor-formulario .formContacto .contenedor-terminos {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 500px;
+  margin: 5px auto;
+}
+.main-contacto .contenedor-formulario .formContacto .contenedor-terminos .terminos {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+.main-contacto .contenedor-formulario .formContacto .contenedor-terminos .terminos h6 {
+  margin: 15px;
+  color: white;
+  font-size: 20px;
+}
+.main-contacto .contenedor-formulario .formContacto .contenedor-terminos .terminos input {
+  margin: 20px 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.main-contacto .contenedor-formulario .formContacto .contenedor-terminos .btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px auto;
+  width: 80%;
+  max-width: 500px;
+  /* This changes all the animations globally */
+}
+.main-contacto .contenedor-formulario .formContacto .contenedor-terminos .btn button {
+  width: 150px;
+  height: 50px;
+  margin: 15px;
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #3f3fd8;
+  color: white;
+  cursor: pointer;
+}
+.main-contacto .contenedor-formulario .formContacto .contenedor-terminos .btn .animate__animated.animate__bounce {
+  --animate-duration: 2s;
+}
+.main-contacto .contenedor-formulario .formContacto .contenedor-terminos .btn :root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+.main-contacto .contenedor-formulario .formContacto .contenedor-terminos .btn button:hover {
+  background-color: #6060ca;
+  cursor: pointer;
+}
+
+.main-pedido {
+  width: 100%;
+  max-width: 2300px;
+  margin: 100px auto;
+}
+.main-pedido h1 {
+  text-align: center;
+  color: white;
+}
+.main-pedido .contenedor-pedido {
+  width: 100%;
+  padding: 20px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+}
+.main-pedido .contenedor-pedido .formPedido {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-pedido .contenedor-pedido .formPedido .data {
+  width: 80%;
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-pedido .contenedor-pedido .formPedido .data label,
+.main-pedido .contenedor-pedido .formPedido .data span {
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.main-pedido .contenedor-pedido .formPedido .data input,
+.main-pedido .contenedor-pedido .formPedido .data select {
+  border-radius: 5px;
+  height: 50px;
+}
+.main-pedido .contenedor-pedido .formPedido .data-terminos {
+  width: 50%;
+  max-width: 500px;
+  margin: 15px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-pedido .contenedor-pedido .formPedido .data-terminos h6 {
+  margin: 15px;
+  color: white;
+  font-size: 20px;
+}
+.main-pedido .contenedor-pedido .formPedido .data-terminos input {
+  margin: 20px 5px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.main-pedido .contenedor-pedido .formPedido .data-btn {
+  width: 50%;
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.main-pedido .contenedor-pedido .formPedido .data-btn button {
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  margin: 15px;
+  background-color: rgba(246, 187, 38, 0.972);
+  color: black;
+  cursor: pointer;
+}
+.main-pedido .contenedor-pedido .formPedido .data-btn button:hover {
+  background-color: #4848ce;
+  cursor: pointer;
+}
+.main-pedido .contenedor-pedido .iframe {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  align-items: flex-start;
+}
+.main-pedido .contenedor-pedido .iframe .iframe {
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .main-pedido .contenedor-pedido {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-pedido .contenedor-pedido .formPedido {
+    width: 100%;
+  }
+  .main-pedido .contenedor-pedido .formPedido .data {
+    width: 80%;
+    max-width: 1100px;
+  }
+  .main-pedido .contenedor-pedido .iframe {
+    margin-top: 50px;
+    width: 80%;
+  }
+}
 footer {
   width: 100%;
-  max-width: 2000px;
+  max-width: 2400px;
   margin: auto;
   margin-top: 150px;
   background-color: rgba(0, 0, 0, 0.979);
@@ -481,8 +715,10 @@ footer .contenedor-footer2 .item-footer-input button:hover {
     width: 50%;
     margin: auto;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
   footer .contenedor-footer2 .item-footer2 .sub-item2 {
     display: flex;
@@ -533,6 +769,9 @@ footer .contenedor-footer2 .item-footer-input button:hover {
     width: 100%;
     margin: 50px auto;
   }
+  footer .item-footer-input h5 {
+    text-align: center;
+  }
   footer .item-footer-input h6 {
     text-align: center;
   }
@@ -568,6 +807,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   font-family: Lato, sans-serif;
+  padding: 0;
 }
 
 /*# sourceMappingURL=estilos.css.map */

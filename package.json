@@ -4,8 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass --watch scss/style.scss css/estilos.css" },
+    "compile:sass": "sass --watch scss/style.scss css/estilos.css"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4"
+  }
 }
